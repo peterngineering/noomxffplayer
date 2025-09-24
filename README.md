@@ -29,4 +29,4 @@ The eventual transition should be a fun learning experience.
 **Stern Warning!** *A lot of developers don't appreciate anyone making it easy for people to use technologies they want dead, no longer develop, that are deemed deprecated,
 So don't go asking for help anywhere for this, you been warned! Your own ur own if you try this and even more if you use it.* 
 
-Keep in mind, I'm doing this for learning and fun mostly. I'm more of a systems person generally speaking; packager/sysbuilder than developer, but I enjoy it all.
+Keep in mind, I'm doing this for learning and fun mostly. I'm more of a generic systems person generally speaking; and specifically I'm more of a packager/sysbuilder than developer, but I enjoy it all.
