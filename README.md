@@ -5,11 +5,13 @@ the last of omxplayer
 
 omxplayer is deprecated, not many (if any) are developing around it since newer technology exists with open source and newer clean supported APIs.
 
-Then why bother creating yet another incarnation of a bitrotted deprecated stack?
+Then why bother with using a bitrotten and/or deprecated stack?
 
 Simple:
 *Omxplayer still accels at doing one thing great:* 
-**Displaying mpeg4 streams live with no gui, in hardware (with very little cpu needed).**
+**Displaying mpeg4 streams live with no gui, in hardware (with very little cpu needed).**This on the rpi0(s) is very low power as well,1-2Watts roughly.
+   (I have not tried it, but supposibly you can still buy the licence/codecs for the rpi0/1/2/3 32bit gpu(s) to do mpeg2 decode in hw as well.)
+    
 
 A lot of debating has gone around that other technologies can do the same thing that are actively developed.
 	Most often its suggested for one to use one of the following alternatives configured for console use.
@@ -19,7 +21,12 @@ A lot of debating has gone around that other technologies can do the same thing 
   2. mplayer/mpv 
   3. ffplay with SDL
 
-*I may actually move towards building one of those after this, for a direct comparision.
+*I actually want to move towards building one of those after this, for a direct comparision and truly replace this method with a newer vc4/drm/gbm/mesa3d/ffmpeg based stack.
+Something very lean and to the point as omxplayer is(was). I have other projects using drm/vc4 that work great without using the older proprietary stack at all, but they use QT which is quite heavy in itself. Some advanced embedded developers such as those in Kodi/OSMC etc already do this type of work lower than QT already, but I'm not at that level of development skill, yet. 
+Omxplayer is the only project I have left using the old stack and this is it, the last of it.
+The eventual transition should be a fun learning experience.
 
 **Stern Warning!** *A lot of developers don't appreciate anyone making it easy for people to use technologies they want dead, no longer develop, that are deemed deprecated,
-So don't go asking for help anywhere for this, you been warned! Your own ur own if you try this and even more if you use it.*
+So don't go asking for help anywhere for this, you been warned! Your own ur own if you try this and even more if you use it.* 
+
+Keep in mind, I'm doing this for learning and fun mostly. I'm more of a systems person generally speaking; packager/sysbuilder than developer, but I enjoy it all.
