@@ -9,7 +9,7 @@ Then why bother creating yet another incarnation of a bitrotted deprecated stack
 
 Simple:
 *Omxplayer still accels at doing one thing great:* 
-**Displaying mpeg 4 streams live with no gui, in hardware (with very little cpu needed).**
+**Displaying mpeg4 streams live with no gui, in hardware (with very little cpu needed).**
 
 A lot of debating has gone around that other technologies can do the same thing that are actively developed.
 	Most often its suggested for one to use one of the following alternatives configured for console use.
