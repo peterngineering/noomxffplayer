@@ -10,7 +10,7 @@ Then why bother with using a bitrotten and/or deprecated stack?
 Simple:
 *Omxplayer still accels at doing one thing great:* 
 **Displaying mpeg4 streams live with no gui, in hardware (with very little cpu needed).**This on the rpi0(s) is very low power as well,1-2Watts roughly.
-   (I have not tried it, but supposibly you can still buy the licence/codecs for the rpi0/1/2/3 32bit gpu(s) to do mpeg2 decode in hw as well.)
+   (I have not tried it, but supposibly you can still buy the license/codecs for the rpi0/1/2/3 32bit gpu(s) to do mpeg2 decode in hw as well.)
     
 
 A lot of debating has gone around that other technologies can do the same thing that are actively developed.
