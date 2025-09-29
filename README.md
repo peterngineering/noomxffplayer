@@ -1,3 +1,4 @@
+**I've delayed the public release a bit more, I'm testing a couple different options before I'm ready to release**
 # ohmxplayer
 the last of omxplayer
 
