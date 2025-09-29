@@ -27,7 +27,8 @@ Something very lean and to the point as omxplayer is(was). I have other projects
 Omxplayer is the only project I have left using the old stack and this is it, the last of it.
 The eventual transition should be a fun learning experience.
 
-**Stern Warning!** *A lot of developers don't appreciate anyone making it easy for people to use technologies they want dead, no longer develop, that are deemed deprecated,
+**Stern Warning!** *A lot of developers don't appreciate anyone making it easy for people to use technologies they want dead, no longer develop, that are deemed deprecated,most of this I think comes from a  fact that a 'main stream developers work' is constant ongoing/trying to keep up with the latest and greatest *everything*.
+So they invest in new code which is most often superior than old, easy enough to understand in theory. Next time you get barked at for using older software keep in mind the role(s) they play is/are not likely to be same as yours and asking a main stream devel questions around old software often appeals NOT to them, to say the least.
 So don't go asking for help anywhere for this, you been warned! Your own ur own if you try this and even more if you use it.* 
 
 Keep in mind, I'm doing this for learning and fun mostly. I'm more of a generic systems person generally speaking; and specifically I'm more of a packager/sysbuilder than developer, but I enjoy it all.
