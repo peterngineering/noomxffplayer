@@ -16,7 +16,10 @@ From my understanding, ffmpeg leverages it using drm/mesa dri and probably sdl2.
 
 ### How can you make this work on your distro or build?
 
-* Make sure your ffmpeg has been built with drm.
+* Make sure your ffmpeg has been built with drm/sdl and all the parts needed. DietPi has it, I assume most debians have it built in. I've tested it
+  on Rocky/Alma, they work too with the ffmpeg builds available from their external repos. Just note that unlike on Debian based setups, the rpm builds
+  don't always include all the mesa3d bits needed for arm and other hardware.
+  
 * For the rpi's make sure your using:
 
    dtoverlay=vc4-kms-v3d 
