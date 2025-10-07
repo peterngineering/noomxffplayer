@@ -25,7 +25,7 @@ From my understanding, ffmpeg leverages it using drm/mesa dri and probably sdl2.
 * Install ffmpeg and egl and mesa drivers for your hardware, then test connection to a camera or stream.
 * Then you can start up automatically in a kiosk either using systemd or a shell script. Systemd is easier because it will manage the restarts if needed
 and you can run it as a specific user easy as well,  I think you just need to make sure they are a member of the video group, maybe audio,input too.
-
+*On Debian a quick method could be to install kmscube, then make sure it works, then test your camera/stream.*
 GL and enjoy!
 *I might upload an example systemd unit soon.*
 
