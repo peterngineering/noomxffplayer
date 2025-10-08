@@ -32,14 +32,14 @@ and you can run it as a specific user easy as well,  I think you just need to ma
 GL and enjoy!
 *I might upload an example systemd unit soon.*
 
-This is so easy to do, I won't be building a dedicated build for it, all the debian and other distros have this tech available, and it's not deprecated :)
+This is so easy to do. 
 
 ### Downsides?
 * Using non omxplayer options do use more CPU, but its not too bad.
 * Using it on the original single core rpi0/0w might be different result though and I havent tried that yet. I suspect it might use 100% of a single core arm cpu,
 * but in a decicated kiosk setup you might get it to work acceptably. I will post updated results here after I try it on a rpi0/0w with a debian based distro.
 
-
+*I might build a version for this repo that is lean and tuned for the rpi0/0w that will come with a systemd template pre-setup with example usage.*
 
 
 
