@@ -41,5 +41,7 @@ This is so easy to do.
 
 *I might build a version for this repo that is lean and tuned for the rpi0/0w that will come with a systemd template pre-setup with example usage.*
 
+After all, I just like building things and only need a half-decent excuse to try!
+
 
 
