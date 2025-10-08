@@ -34,6 +34,12 @@ GL and enjoy!
 
 This is so easy to do, I won't be building a dedicated build for it, all the debian and other distros have this tech available, and it's not deprecated :)
 
+### Downsides?
+* Using non omxplayer options do use more CPU, but its not too bad.
+* Using it on the original single core rpi0/0w might be different result though and I havent tried that yet. I suspect it might use 100% of a single core arm cpu,
+* but in a decicated kiosk setup you might get it to work acceptably. I will post updated results here after I try it on a rpi0/0w with a debian based distro.
+
+
 
 
 
