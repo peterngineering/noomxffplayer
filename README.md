@@ -16,13 +16,22 @@ From my understanding, ffmpeg leverages it using drm/mesa dri and probably sdl2.
 
 ### How can you make this work on your distro or build?
 
-* Make sure your ffmpeg has been built with drm/sdl and all the parts needed. DietPi has it, I assume most debians have it built in. I've tested it
+* Make sure your ffmpeg has been built with drm/sdl/v4l2 and all the parts needed. DietPi has it, I assume most debians have it built in. I've tested it
   on Rocky/Alma, they work too with the ffmpeg builds available from their external repos. Just note that unlike on Debian based setups, the rpm builds
   don't always include all the mesa3d bits needed for arm and other hardware.
   
-* For the rpi's make sure your using:
+* For the rpi's try using the vc4 for your board in config.txt
+   dtoverlay=vc4-kms-v3d
 
-   dtoverlay=vc4-kms-v3d 
+    *I found reduced cpu use using the v4l interface as well
+
+ *On a old rpi2 I'm currently testing it with:
+ <code>
+ffplay -an -codec:v h264_v4l2m2m -probesize 32 -sync ext rtsp://user:pwd@cameraip:port
+  </codes>
+**Seems to work well with acceptable CPU use, load avgs are down 50% over not specifying v4l2, I'm averaging < 1.0 now vs nearly 2 before on a rpi2.**
+I do get artifacting but I think i need to tune the -probesize a bit more.
+  
 
 * For generic x86_64, it should just work once you have installed everything.
 * Install ffmpeg and egl and mesa drivers for your hardware, then test connection to a camera or stream.
