@@ -44,13 +44,10 @@ GL and enjoy!
 This is so easy to do. 
 
 ### Downsides?
-* Using non omxplayer options do use more CPU, but its not too bad.
-* Using it on the original single core rpi0/0w might be different result though and I havent tried that yet. I suspect it might use 100% of a single core arm cpu,
-* but in a decicated kiosk setup you might get it to work acceptably. I will post updated results here after I try it on a rpi0/0w with a debian based distro.
+* Using non omxplayer options do use more CPU, but its not too bad. It will be more of a load on the oldest RPI's, but v4l2 helps a lot in those cases.
 
 *I might build a version for this repo that is lean and tuned for the rpi0/0w that will come with a systemd template pre-setup with example usage.*
 
-After all, I just like building things and only need a half-decent excuse to try!
 
 
 
