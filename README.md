@@ -29,7 +29,7 @@ From my understanding, ffmpeg leverages it using drm/mesa dri and probably sdl2.
  <code>
 ffplay -an -codec:v h264_v4l2m2m -probesize 32 -sync ext rtsp://user:pwd@cameraip:port
   </codes>
-**Seems to work well with acceptable CPU use, load avgs are down 50% over not specifying v4l2, I'm averaging < 1.0 now vs nearly 2 before on a rpi2.**
+**Seems to work well with acceptable CPU use, load avgs are down 50% over not specifying v4l2, I'm averaging < 1.0 now(displaying 720p is even less) vs nearly 2 before on a rpi2.**
 I do get artifacting but I think i need to tune the -probesize a bit more.
   
 
