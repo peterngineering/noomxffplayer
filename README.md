@@ -7,7 +7,7 @@ This is mostly here for information and tips on how to move away from omxplayer 
 Using FFmpeg/ffplay one can achieve full freedom away from omxplayer(if you haven't long ago already) and ensure updates will be coming.
 
 ### How does it work? 
-From my understanding, ffmpeg leverages it using drm/mesa dri and probably sdl2.
+From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably sdl2.
 
 * What is great about it, is that it will work on all most hardware using the same method.
 
