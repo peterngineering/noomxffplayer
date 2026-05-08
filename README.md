@@ -11,13 +11,15 @@ From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably
 ### What is cool about using ffplay instead of omxplayer? 
   * It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.
   * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.
+  * Works with many/most file types/media sources, omxplayer needs a license for mpeg2 sources.
   * You have full control over your console output with many options
   * It is included in offical repos
   * On the rpi platform you have alot of options to use with vc4-kms-v3d* overlay types, which won't work with omxplayer. 
 
 ### What is cool about using omxplayer instead of ffplay?
   * On the 32bit versions of raspberrypi with the 32bit userland and openmax headers, it can/will
-  use less power and cpu cycles than ffmpeg/ffplay methods with drm.
+  use less power and cpu cycles than ffmpeg/ffplay methods with drm on media sources it supports.
+  * Works great for sources that are compatible with its hardware/gpu videocore unit like h264.
   * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
   * Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit
   * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance.
