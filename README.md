@@ -23,7 +23,7 @@ From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably
   * Works for sources that are compatible with its hardware/gpu videocore unit like h264.
   * With some process oversight(routine periodic restarts), it can work well.
   * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
-  * Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit
+  * Recent forks have some interesting and useful features.
   * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance.
     
 ### How can you make ffplay work on your distro or build?
@@ -52,8 +52,7 @@ and you can run it as a specific user easy as well,  I think you just need to ma
 GL and enjoy!
 
 ### How can you make omxplayer work on your rpi/32bit distro or build?
-*COMING SOON* 
-
+*COMING SOON, I'll give some options for you to try omxplayer again, including the newer forks, that I have gotten working*
 
 
 
