@@ -21,6 +21,7 @@ From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably
   * On the 32bit versions of raspberrypi with the 32bit userland and openmax headers, it can/will
   use less power and cpu cycles than ffmpeg/ffplay methods with drm on media sources it supports.
   * Works for sources that are compatible with its hardware/gpu videocore unit like h264.
+  * With some process oversight(routine periodic restarts), it can work well.
   * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
   * Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit
   * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance.
