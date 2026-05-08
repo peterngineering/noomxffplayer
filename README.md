@@ -9,31 +9,30 @@ and a lite comparison of the two.
 From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably sdl2.
 
 ### What is cool about using ffplay instead of omxplayer? 
-  *It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.*
-  *omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.*
-  *You have full control over your console output with many options*
-  *It is included in offical repos*
-  *On the rpi platform you have alot of options to use with vc4-kms-v3d* overlay types, which won't work with omxplayer. 
+  * It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.
+  * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.
+  * You have full control over your console output with many options
+  * It is included in offical repos
+  * On the rpi platform you have alot of options to use with vc4-kms-v3d* overlay types, which won't work with omxplayer. 
 
 ### What is cool about using omxplayer instead of ffplay?
-  *On the 32bit versions of raspberrypi with the 32bit userland and openmax headers, it can/will
-  use less power and cpu cycles than ffmpeg/ffplay methods with drm.*
-  *Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.*
-  *Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit*
-  *On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance while.
+  * On the 32bit versions of raspberrypi with the 32bit userland and openmax headers, it can/will
+  use less power and cpu cycles than ffmpeg/ffplay methods with drm.
+  * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
+  * Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit
+  * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance while.
     
 ### How can you make ffplay work on your distro or build?
 
-* Make sure your ffmpeg has been built with drm/sdl/v4l2 and all the parts needed. DietPi has it, I assume most debians have it built in. I've tested it
-  on Rocky/Alma, they work too with the ffmpeg builds available from their external repos. Just note that unlike on Debian based setups, the rpm builds
+* Make sure your ffmpeg has been built with drm/sdl/v4l2 and all the parts needed. DietPi has it, I assume most debians have it built in. I've tested it   on Rocky/Alma, they work too with the ffmpeg builds available from their external repos. Just note that unlike on Debian based setups, the rpm builds
   don't always include all the mesa3d bits needed for arm and other hardware.
   
 * For the rpi's try using the vc4 for your board in config.txt
-   dtoverlay=vc4-kms-v3d
+  
+   <code>dtoverlay=vc4-kms-v3d</code>
 
-    *I found reduced cpu use using the v4l interface as well
-
- *On a old rpi2 I'm currently testing it with:
+ * I found reduced cpu use using the v4l interface as well
+ * On a old rpi2 I'm currently testing it with:
  <code>
 ffplay -an -codec:v h264_v4l2m2m -probesize 32 -sync ext rtsp://user:pwd@cameraip:port
   </codes>
