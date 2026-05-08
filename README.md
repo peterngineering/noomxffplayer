@@ -20,7 +20,7 @@ From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably
   use less power and cpu cycles than ffmpeg/ffplay methods with drm.
   * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
   * Recent forks have some interesting features, that have motivated me to soon build packages for bookworm/trixie    raspios 32bit
-  * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance while.
+  * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance.
     
 ### How can you make ffplay work on your distro or build?
 
