@@ -12,7 +12,8 @@ From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably
   * It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.
   * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.
   * Works with many/most file types/media sources, omxplayer needs a license for mpeg2 sources.
-  * You have full control over your console output with many options
+  * You have full control over your console output with many options.
+  * It is very stable software and probably will not need a lot of process oversight management/recovery routines.
   * It is included in offical repos
   * On the rpi platform you have alot of options to use with vc4-kms-v3d* overlay types, which won't work with omxplayer. 
 
