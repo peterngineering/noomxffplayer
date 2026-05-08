@@ -6,8 +6,7 @@ and a lite comparison of the two.
 
 
 ### How does it(ffplay) work? 
-From my understanding, ffmpeg leverages it using drm/mesa dri, v4l2 and probably sdl2.
-
+From my understanding, ffmpeg leverages it using drm/mesa dri
 ### What is cool about using ffplay instead of omxplayer? 
   * It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.
   * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.
