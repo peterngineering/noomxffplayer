@@ -1,7 +1,7 @@
 ### Welcome to the Noomxffplayer github repo.
 
-This is mostly here for information and tips on how to use ffmpeg's: ffplay as an alternative to omxplayer
-and a lite comparison of the two.
+This is mostly here for information and tips on how to use ffmpeg's: ffplay on 64bit systems.
+*Including a lite comparison of omxplayer vs ffplay.
 *Omxplayer was forked and is being updated (outside offical raspios)*
 
 
@@ -9,7 +9,7 @@ and a lite comparison of the two.
 From my understanding, ffmpeg leverages it using drm/mesa dri
 ### What is cool about using ffplay instead of omxplayer? 
   * It uses a standardized kernel drm method that works on 32/64bit arm/aarch64/x86_64 and maybe more.
-  * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax headers.
+  * omxplayer is just for 32bit versions(userland) of a raspberrypi with openmax libs/headers.
   * Works with many/most file types/media sources, omxplayer needs a license for mpeg2 sources.
   * You have full control over your console output with many options.
   * It is very stable software(less bugs) and probably will not need a lot of process oversight management/recovery routines.
@@ -17,10 +17,10 @@ From my understanding, ffmpeg leverages it using drm/mesa dri
   * On the rpi platform you have alot of options to use with vc4-kms-v3d* overlay types, which won't work with omxplayer. 
 
 ### What is cool about using omxplayer instead of ffplay?
-  * On the 32bit versions of raspberrypi with the 32bit userland and openmax headers, it can/will
+  * On the 32bit versions of raspberrypi with the 32bit userland and openmax libs/headers, it can/will
   use less power and cpu cycles than ffmpeg/ffplay methods with drm on media sources it supports.
-  * Works for sources that are compatible with its hardware/gpu videocore unit like h264.
-  * With some process oversight(routine periodic restarts), it can work well.
+  * Works for sources that are compatible with its hardware/gpu videocore unit like h264/mjpeg.
+  * With some process oversight(routine periodic restarts), it can work well even over wifi.
   * Recent forks have been updated to build against newer ffmpeg versions and are very lightweight on cpu/memory use.
   * Recent forks have some interesting and useful features.
   * On older hardware rpi's omxplayer can playback videoloops/music from playlists like an appliance.
@@ -51,7 +51,7 @@ and you can run it as a specific user easy as well,  I think you just need to ma
 GL and enjoy!
 
 ### How can you make omxplayer work on your rpi/32bit distro or build?
-*COMING SOON, I'll give some options for you to try omxplayer again, including the newer forks, that I have gotten working*
+See my 'omxplayer' repo, I have forked a version that is being updated and have included instructions for bookworm.
 
 
 
