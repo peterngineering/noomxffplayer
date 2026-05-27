@@ -53,9 +53,7 @@ GL and enjoy!
 ### How can you make omxplayer work on your rpi/32bit distro or build?
 
 
-* First off. I stopped being a 'pure linux zealot' some time ago.
-* I'm not really looking for a new religion/philosophy. I can think for myself and allow others to do the same.
-* I like all computing/software, not just linux and gnu! 
+* I use linux as my primary OS. However, I'm very flexible and tolerant and like other OS's and even non GNU software too.
 
 For a long time I had thought omxplayer was done. Well it was only really done in offical debian/raspios and a few more linux vendor repos.
 I understand and know quite about about the linux kernel open drm standard linux replacement. I'm not downplaying it at all, but It is
