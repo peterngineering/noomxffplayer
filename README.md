@@ -51,7 +51,29 @@ and you can run it as a specific user easy as well,  I think you just need to ma
 GL and enjoy!
 
 ### How can you make omxplayer work on your rpi/32bit distro or build?
-See my 'omxplayer' repo, I have forked a version that is being updated and have included instructions for bookworm.
 
 
+* First off. I stopped being a 'pure linux zealot' some time ago.
+* I'm not really looking for a new religion/philosophy. I can think for myself and allow others to do the same.
+* I like all computing/software, not just linux and gnu! 
+
+For a long time I had thought omxplayer was done. Well it was only really done in offical debian/raspios and a few more linux vendor repos.
+I understand and know quite about about the linux kernel open drm standard linux replacement. I'm not downplaying it at all, but It is
+nice that omxplayer is still around. I haven't tried it 'yet' , but I suspect the omxplayer from mjfwalsh being updated will work on non linux too.
+
+
+
+See:
+ https://github.com/mjfwalsh/omxplayer:
+ 
+ He has been working on omxplayer for years and is still keeping it updated against newer ffmpeg releases.
+ This likely means you can make/keep an omxplayer version working for sometime to come.
+ The improvements he has made are quite impressive. 
+
+
+I created my own'omxplayer' repo at:
+The one I have a forked has included instructions for building on debian/raspios bookworm and a couple non posix changes specific to linux.
+https://github.com/peterngineering/omxplayer/tree/bookworm
+
+ 
 
