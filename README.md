@@ -57,7 +57,7 @@ GL and enjoy!
 
 For a long time I had thought omxplayer was done. Well it was only really done in offical debian/raspios and a few more linux vendor repos.
 I understand and know quite about about the linux kernel open drm standard linux replacement. 
-I'm not downplaying it at all, but It is nice that omxplayer is still around. 
+I'm not downplaying the open drm linux standards at all, but It is nice that omxplayer is still around. 
 I haven't tried it 'yet' , but I suspect the omxplayer from mjfwalsh being updated will work on non linux too.
 
 
